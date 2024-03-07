@@ -6,11 +6,15 @@ import PageOneComponent from './Components/Pages/PageOneComponent';
 import PageTwoComponent from './Components/Pages/PageTwoComponent';
 import PageThreeComponent from './Components/Pages/PageThreeComponent';
 import PageFourComponent from './Components/Pages/PageFourComponent';
+import NavBarComponent from './Components/NavBarComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <>
+    
       <BrowserRouter>
+      <NavBarComponent />
         <Routes>
           <Route path='/' element={<HomePageComponent />}/>
           <Route path='/pageOne' element={<PageOneComponent />}/>
